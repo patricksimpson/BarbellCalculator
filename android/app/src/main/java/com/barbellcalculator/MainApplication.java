@@ -1,4 +1,4 @@
-package com.awesomeproject;
+package com.barbellcalculator;
 
 import android.app.Application;
 import android.util.Log;
