@@ -8,7 +8,7 @@ const styles =
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#222',
+      backgroundColor: '#333',
     },
     welcome: {
       fontSize: 20,
@@ -29,10 +29,11 @@ const styles =
     barbellInput: {
       width: 80,
       height: 40,
-      borderColor: '#999',
+      borderColor: '#666',
+      padding: 2,
       borderWidth: 1,
-      backgroundColor: '#333',
-      color: '#aaa'
+      backgroundColor: '#ccc',
+      color: '#333',
     }
   });
 
