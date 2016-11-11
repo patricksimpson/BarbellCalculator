@@ -13,7 +13,6 @@ export default class BarbellInput extends Component {
         maxLength={4}
         placeholder='lbs'
         keyboardType='numeric'
-        placeholderStyle={{color: '#aaa'}}
       />
     );
   }

@@ -22,16 +22,16 @@ export default class BarbellCalculator extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.topMenu}>
-          <Text style={styles.title}>
+      <View style={styles.mainContainer}>
+        <View style={styles.toolbar}>
+          <Text style={styles.toolbarTitle}>
             Barbell Calulator
           </Text>
-          <TouchableHighlight onPress={ this._navigate.bind(this) } style={ styles.button }>
-            <Text>Plates</Text>
+          <TouchableHighlight onPress={ this._navigate.bind(this) } style={ styles.toolbarButton }>
+            <Text style={styles.toolbarButtonText}>Plates</Text>
           </TouchableHighlight>
         </View>
-        <View style={styles.main}>
+        <View style={styles.content}>
           <Text style={styles.instructions}>
             Add weight to your plate inventory and calculate weight on your barbell below.
           </Text>

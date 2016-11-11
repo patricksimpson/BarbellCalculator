@@ -19,7 +19,7 @@ export default class BarbellCalculatorApp extends Component {
 
   render() {
     return (
-      <Navigator
+        <Navigator
         renderScene={ this.renderScene.bind(this) }
         initialRoute={{
           title: 'Barbell Calculator',

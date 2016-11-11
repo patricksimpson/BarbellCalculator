@@ -4,11 +4,11 @@ import {
   View,
   Navigator,
   TouchableHighlight,
-  Button
 } from 'react-native';
 
 import BarbellInput from './BarbellInput';
 import styles from './Styles';
+import BarbellPlateButton from './BarbellPlateButton';
 
 export default class BarbellPlates extends Component {
 
@@ -16,31 +16,28 @@ export default class BarbellPlates extends Component {
     this.props.navigator.pop()
   }
 
-  _sub() {
-    alert('Sub 45');
-  }
-
-  _add() {
-    alert('Add 45');
-  }
-
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.topMenu}>
-          <Text style={styles.title}>
-            Barbell Plates
-          </Text>
-          <TouchableHighlight onPress={ this._navigate.bind(this) } style={ styles.button }>
-            <Text>Back</Text>
+      <View style={styles.mainContainer}>
+        <View style={styles.toolbar}>
+          <TouchableHighlight onPress={ this._navigate.bind(this) } style={ styles.toolbarButton }>
+            <Text style={styles.toolbarButtonText}>Back</Text>
           </TouchableHighlight>
+          <Text style={styles.toolbarTitle}>
+            Barbell Calulator: Edit Plates
+          </Text>
         </View>
-        <View style={styles.plateInventory}>
-          <Button onPress={ this._sub } style={ styles.plateButton } title='-' />
-          <Text>45</Text>
-          <Button onPress={ this._addj } style={ styles.plateButton } title='+' />
+        <View style={styles.content}>
+          <View style={styles.plateInventory}>
+            <BarbellPlateButton amount='45'/>
+            <BarbellPlateButton amount='35'/>
+            <BarbellPlateButton amount='25'/>
+            <BarbellPlateButton amount='10'/>
+            <BarbellPlateButton amount='5'/>
+            <BarbellPlateButton amount='2.5'/>
+          </View>
         </View>
       </View>
     );
   }
-}
+};

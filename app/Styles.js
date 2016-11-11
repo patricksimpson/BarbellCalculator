@@ -4,28 +4,41 @@ import {
 
 const styles =
   StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#333',
+    mainContainer: {
+      flex: 1
     },
-    topMenu: {
-      height: 130
+    toolbar:{
+      backgroundColor:'#333',
+      paddingTop:30,
+      paddingBottom:10,
+      flexDirection:'row'
     },
-    main: {
-      justifyContent: 'center',
-      alignItems: 'center',
+    toolbarButton:{
+      width: 50
     },
-    title: {
-      fontSize: 20,
+    toolbarTitle:{
+      color:'#eee',
+      textAlign:'center',
+      fontWeight:'bold',
+      fontSize: 18,
+      flex:1
+    },
+    toolbarButtonText: {
+      color: '#aaa',
+      backgroundColor: '#555',
+      borderColor: '#000',
       textAlign: 'center',
-      margin: 10,
-      color: "#eee",
-      height: 30,
+      padding: 5
+    },
+    content: {
+      backgroundColor:'#eee',
+      flex:1,
+      paddingTop: 10
     },
     instructions: {
       textAlign: 'center',
-      color: '#aaa',
-      marginBottom: 5,
+      color: '#333',
+      marginBottom: 1,
     },
     inputContainer: {
       flex: 1,
@@ -40,8 +53,8 @@ const styles =
       borderColor: '#666',
       padding: 2,
       borderWidth: 1,
-      backgroundColor: '#ccc',
-      color: '#333',
+      backgroundColor: '#eee',
+      color: '#444',
     },
     button: {
       backgroundColor: '#efefef',
@@ -52,15 +65,28 @@ const styles =
       width: 120
     },
     plateButton: {
-      width: 10,
-      fontSize: 8,
-      textAlign: 'center',
+      width: 40,
+      fontSize: 18,
       height: 30,
-      margin: 5
+      textAlign: 'center',
+      margin: 10
+    },
+    plateButtonContainer: {
+      height: 30,
+      margin: 5,
+      alignItems: 'center',
+      flexDirection:'row'
+    },
+    plateText: {
+      fontSize: 18,
+      height: 30,
+      width: 200,
+      textAlign: 'center',
+      margin: 10
     },
     plateInventory: {
-      marginTop: 10,
-      marginBottom: 10
+      alignItems: 'center',
+      flex: 1
     }
   });
 
