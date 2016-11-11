@@ -25,7 +25,7 @@ export default class BarbellCalculator extends Component {
       <View style={styles.container}>
         <View style={styles.topMenu}>
           <Text style={styles.title}>
-            Barbell Calculator
+            Barbell Calulator
           </Text>
           <TouchableHighlight onPress={ this._navigate.bind(this) } style={ styles.button }>
             <Text>Plates</Text>
@@ -33,7 +33,7 @@ export default class BarbellCalculator extends Component {
         </View>
         <View style={styles.main}>
           <Text style={styles.instructions}>
-            Add weight to your plate inventory and calculate weight on your barbell.
+            Add weight to your plate inventory and calculate weight on your barbell below.
           </Text>
           <View style={styles.inputContainer}>
             <BarbellInput style={styles.barbellInput} />
@@ -42,4 +42,4 @@ export default class BarbellCalculator extends Component {
       </View>
     );
   }
-}
+};

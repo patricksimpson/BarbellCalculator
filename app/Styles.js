@@ -8,15 +8,19 @@ const styles =
       flex: 1,
       backgroundColor: '#333',
     },
+    topMenu: {
+      height: 130
+    },
     main: {
       justifyContent: 'center',
       alignItems: 'center',
     },
-    welcome: {
+    title: {
       fontSize: 20,
       textAlign: 'center',
       margin: 10,
       color: "#eee",
+      height: 30,
     },
     instructions: {
       textAlign: 'center',
@@ -24,6 +28,8 @@ const styles =
       marginBottom: 5,
     },
     inputContainer: {
+      flex: 1,
+      flexDirection: 'column',
       marginTop: 5,
       marginBottom: 5,
       alignItems: 'center',
@@ -39,13 +45,22 @@ const styles =
     },
     button: {
       backgroundColor: '#efefef',
-      height:50,
+      height: 50,
       justifyContent: 'center',
       alignItems: 'center',
-      marginTop:10
+      marginTop:10,
+      width: 120
     },
-    topMenu: {
-      backgroundColor: '#555'
+    plateButton: {
+      width: 10,
+      fontSize: 8,
+      textAlign: 'center',
+      height: 30,
+      margin: 5
+    },
+    plateInventory: {
+      marginTop: 10,
+      marginBottom: 10
     }
   });
 
