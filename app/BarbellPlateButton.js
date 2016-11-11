@@ -15,17 +15,21 @@ export default class BarbellPlateButton extends Component {
   }
 
   _sub() {
-     _updateStateValue(-1);
+    if (this.state.value > 0) {
+      this._updateStateValue(-1);
+    }
   }
 
   _add() {
-     _updateStateValue(1);
+    if (this.state.value < 50) {
+     this._updateStateValue(1);
+    }
   }
   _updateStateValue(n)  {
-    this._saveState(this.state.value * 1 + n);
+    this._saveState((this.state.value * 1) + n);
   }
 
-  _saveState(value) {
+  _saveState(n) {
     this.setState({value: n});
     AsyncStorage.setItem(this._getKey(), JSON.stringify(n));
   }
