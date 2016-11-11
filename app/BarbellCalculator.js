@@ -25,7 +25,7 @@ export default class BarbellCalculator extends Component {
       <View style={styles.mainContainer}>
         <View style={styles.toolbar}>
           <Text style={styles.toolbarTitle}>
-            Barbell Calulator
+            Barbell Calculator
           </Text>
           <TouchableHighlight onPress={ this._navigate.bind(this) } style={ styles.toolbarButton }>
             <Text style={styles.toolbarButtonText}>Plates</Text>

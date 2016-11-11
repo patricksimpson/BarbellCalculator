@@ -24,7 +24,7 @@ export default class BarbellPlates extends Component {
             <Text style={styles.toolbarButtonText}>Back</Text>
           </TouchableHighlight>
           <Text style={styles.toolbarTitle}>
-            Barbell Calulator: Edit Plates
+            Edit Plates
           </Text>
         </View>
         <View style={styles.content}>
