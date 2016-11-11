@@ -4,16 +4,30 @@
  * @flow
  */
 import React, { Component } from 'react';
-import { AppRegistry } from 'react-native';
+import {
+  AppRegistry,
+  Navigator,
+} from 'react-native';
 
-import BarbellCalculator from './BarbellCalculator';
+import BarbellCalculator from './app/BarbellCalculator';
+import styles from './app/Styles';
 
 export default class BarbellCalculatorApp extends Component {
+  renderScene (route, navigator) {
+    return <route.component navigator={navigator} />
+  }
+
   render() {
     return (
-        <BarbellCalculator/>
+      <Navigator
+        renderScene={ this.renderScene.bind(this) }
+        initialRoute={{
+          title: 'Barbell Calculator',
+          component: BarbellCalculator
+        }}
+      />
     );
   }
 }
 
-AppRegistry.registerComponent('BarbellCalculatorApp', () => BarbellCalculatorApp);
+AppRegistry.registerComponent('BarbellCalculator', () => BarbellCalculatorApp);

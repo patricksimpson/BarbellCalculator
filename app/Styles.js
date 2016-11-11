@@ -6,9 +6,11 @@ const styles =
   StyleSheet.create({
     container: {
       flex: 1,
+      backgroundColor: '#333',
+    },
+    main: {
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#333',
     },
     welcome: {
       fontSize: 20,
@@ -34,6 +36,16 @@ const styles =
       borderWidth: 1,
       backgroundColor: '#ccc',
       color: '#333',
+    },
+    button: {
+      backgroundColor: '#efefef',
+      height:50,
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginTop:10
+    },
+    topMenu: {
+      backgroundColor: '#555'
     }
   });
 
